@@ -60,7 +60,7 @@ p {
 }
 
 .header {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .nav {
@@ -161,18 +161,14 @@ p {
 }
 
 /* hero */
-.hero-container {
-    width: 696px;
-}
 
 .section-hero {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--background-accent-color);
 }
 
 .hero-text {
-    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -180,6 +176,8 @@ p {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+    width: 696px;
+    margin: 0 auto 30px;
 }
 
 .hero-btn {
@@ -190,8 +188,6 @@ p {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
@@ -228,7 +224,7 @@ p {
     list-style-type: none;
 }
 .li-feature-item {
-    width: 270px;
+    flex-basis: calc((100% - 90px) / 4);
 }
 
 .feature-item {
@@ -294,6 +290,10 @@ img {
 }
 
 .team-item {
+    background-color: var(--background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
 }
 
 .teammate {
@@ -320,10 +320,7 @@ img {
 }
 
 .team-box {
-    background-color: var(--background-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    padding-bottom: 30px;
+    
 }
 
 /* footer */
@@ -401,6 +398,7 @@ img {
     display: flex;
     justify-content: center;
     gap: 8px;
+    margin-top: 0px;
     margin-bottom: 50px;
     padding: 0px;
     list-style-type:none;
